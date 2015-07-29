@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ZtV-dO-LLo">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KcE-ud-ZBQ">
+                    <rect key="frame" x="108" y="119" width="264" height="123"/>
+                    <subviews>
+                        <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vll-Wq-kuY">
+                            <rect key="frame" x="0.0" y="0.0" width="264" height="123"/>
+                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mastercard_logo" translatesAutoresizingMaskIntoConstraints="NO" id="U5a-PF-VoM">
+                            <rect key="frame" x="0.0" y="0.0" width="123" height="123"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="U5a-PF-VoM" secondAttribute="height" multiplier="1:1" id="Gpc-gu-G9D"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nea" translatesAutoresizingMaskIntoConstraints="NO" id="hS1-XO-xh9">
+                            <rect key="frame" x="123" y="25" width="133" height="73"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="hS1-XO-xh9" secondAttribute="height" multiplier="20:11" id="lMB-wc-9pu"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="U5a-PF-VoM" firstAttribute="leading" secondItem="KcE-ud-ZBQ" secondAttribute="leading" id="0HK-AQ-w0e"/>
+                        <constraint firstAttribute="bottom" secondItem="Vll-Wq-kuY" secondAttribute="bottom" id="1ae-Me-cSb"/>
+                        <constraint firstItem="hS1-XO-xh9" firstAttribute="leading" secondItem="U5a-PF-VoM" secondAttribute="trailing" id="4co-mx-lbd"/>
+                        <constraint firstItem="Vll-Wq-kuY" firstAttribute="top" secondItem="KcE-ud-ZBQ" secondAttribute="top" id="CIe-nc-Syw"/>
+                        <constraint firstAttribute="centerY" secondItem="hS1-XO-xh9" secondAttribute="centerY" id="ZbK-BV-Znd"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="hS1-XO-xh9" secondAttribute="trailing" id="mqQ-F8-AaL"/>
+                        <constraint firstItem="U5a-PF-VoM" firstAttribute="top" secondItem="KcE-ud-ZBQ" secondAttribute="top" id="rOm-wK-nfp"/>
+                        <constraint firstAttribute="bottom" secondItem="U5a-PF-VoM" secondAttribute="bottom" id="rpz-9d-zbw"/>
+                        <constraint firstAttribute="trailing" secondItem="Vll-Wq-kuY" secondAttribute="trailing" id="tXG-8j-U2e"/>
+                        <constraint firstItem="Vll-Wq-kuY" firstAttribute="leading" secondItem="KcE-ud-ZBQ" secondAttribute="leading" id="u2g-va-B0d"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 MasterCard. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                    <rect key="frame" x="20" y="439" width="441" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZtV-dO-LLo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9Zy-N4-cfk"/>
+                <constraint firstItem="KcE-ud-ZBQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-60" id="B2A-77-3iO"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
+                <constraint firstAttribute="bottom" secondItem="ZtV-dO-LLo" secondAttribute="bottom" id="L4c-Sb-upR"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
+                <constraint firstAttribute="centerX" secondItem="KcE-ud-ZBQ" secondAttribute="centerX" id="NjZ-DF-Egb"/>
+                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
+                <constraint firstAttribute="trailing" secondItem="ZtV-dO-LLo" secondAttribute="trailing" id="ayy-3v-5JI"/>
+                <constraint firstItem="ZtV-dO-LLo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pgj-1m-gCv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="439" height="447"/>
+        <image name="mastercard_logo" width="123" height="95"/>
+        <image name="nea" width="133" height="72"/>
+    </resources>
+</document>
