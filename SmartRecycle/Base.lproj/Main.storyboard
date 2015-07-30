@@ -418,7 +418,7 @@
             </objects>
             <point key="canvasLocation" x="450" y="1353"/>
         </scene>
-        <!--Promotion-->
+        <!--Catalog-->
         <scene sceneID="psA-y2-VDO">
             <objects>
                 <tableViewController id="UQs-ZK-voG" customClass="PromotionViewController" customModule="SmartRecycle" customModuleProvider="target" sceneMemberID="viewController">
@@ -434,7 +434,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1ve-aK-29G" id="sNd-jY-adw">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="texas" translatesAutoresizingMaskIntoConstraints="NO" id="DOb-Ha-nY9">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bssmall" translatesAutoresizingMaskIntoConstraints="NO" id="DOb-Ha-nY9">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
                                                 </imageView>
                                             </subviews>
@@ -522,7 +522,7 @@
                             <outlet property="delegate" destination="UQs-ZK-voG" id="4ep-V0-uto"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Promotion" id="Joa-E5-LJD"/>
+                    <navigationItem key="navigationItem" title="Catalog" id="Joa-E5-LJD"/>
                     <connections>
                         <segue destination="Jrh-Mu-7EF" kind="show" identifier="showPromotion" id="m1e-is-3zT"/>
                     </connections>
@@ -531,10 +531,10 @@
             </objects>
             <point key="canvasLocation" x="1242" y="1353"/>
         </scene>
-        <!--Texas chicken-->
+        <!--Body Shop-->
         <scene sceneID="mpN-KY-t5x">
             <objects>
-                <viewController id="Jrh-Mu-7EF" sceneMemberID="viewController">
+                <viewController id="Jrh-Mu-7EF" customClass="RedempationViewController" customModule="SmartRecycle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Jk-BU-FgY"/>
                         <viewControllerLayoutGuide type="bottom" id="gen-rE-8FY"/>
@@ -543,13 +543,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="texas2" translatesAutoresizingMaskIntoConstraints="NO" id="rxV-hy-8KK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bsbig" translatesAutoresizingMaskIntoConstraints="NO" id="rxV-hy-8KK">
                                 <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rxV-hy-8KK" secondAttribute="height" multiplier="1:1" id="8Vs-Cn-Hrc"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeem this for 1000 points?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGy-CZ-QXN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeem this for 1200 points?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGy-CZ-QXN">
                                 <rect key="frame" x="187" y="694" width="227" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -561,6 +561,9 @@
                                     <color key="titleColor" red="0.028320737233226589" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="confirmButtonPressed:" destination="Jrh-Mu-7EF" eventType="touchUpInside" id="n37-e6-JAy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -574,7 +577,7 @@
                             <constraint firstItem="rxV-hy-8KK" firstAttribute="leading" secondItem="hbI-v0-uLC" secondAttribute="leading" id="hAG-Hz-CPs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Texas chicken" id="dCx-LS-1h8"/>
+                    <navigationItem key="navigationItem" title="Body Shop" id="dCx-LS-1h8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcD-6j-IDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -700,6 +703,8 @@
         <image name="background" width="439" height="447"/>
         <image name="bk" width="224" height="64"/>
         <image name="bs" width="222" height="65"/>
+        <image name="bsbig" width="192" height="176"/>
+        <image name="bssmall" width="163" height="47"/>
         <image name="credit_card" width="250" height="159"/>
         <image name="gift" width="32" height="32"/>
         <image name="green-entrepreneurs-header" width="366" height="112"/>
@@ -711,7 +716,5 @@
         <image name="pt" width="221" height="62"/>
         <image name="settings" width="32" height="32"/>
         <image name="student" width="32" height="32"/>
-        <image name="texas" width="222" height="65"/>
-        <image name="texas2" width="308" height="308"/>
     </resources>
 </document>

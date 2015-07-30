@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		60BD8165A1C9C63271FE07FB /* Pods_SmartRecycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CAF60D99EE7F3DD8E851DF /* Pods_SmartRecycle.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		B13222941B6A1FBA0096F199 /* RedempationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13222931B6A1FBA0096F199 /* RedempationViewController.swift */; };
 		B14296761B4ED96900963536 /* Pods_SmartRecycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CAF60D99EE7F3DD8E851DF /* Pods_SmartRecycle.framework */; };
 		B14296771B4ED96900963536 /* Pods_SmartRecycle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17CAF60D99EE7F3DD8E851DF /* Pods_SmartRecycle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B19B41061B4E87C400EA94DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B41051B4E87C400EA94DE /* HomeViewController.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		17CAF60D99EE7F3DD8E851DF /* Pods_SmartRecycle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartRecycle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8FF99ED255B2A30DB37DF2 /* Pods-SmartRecycle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRecycle.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartRecycle/Pods-SmartRecycle.release.xcconfig"; sourceTree = "<group>"; };
+		B13222931B6A1FBA0096F199 /* RedempationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedempationViewController.swift; sourceTree = "<group>"; };
 		B19B41051B4E87C400EA94DE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B19B41071B4E881300EA94DE /* RecycleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleViewController.swift; sourceTree = "<group>"; };
 		B19B41091B4E891300EA94DE /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				B1F0A6D41B4E5E3000E13E98 /* MainTabBarController.swift */,
 				B19B41051B4E87C400EA94DE /* HomeViewController.swift */,
 				B19B41071B4E881300EA94DE /* RecycleViewController.swift */,
+				B13222931B6A1FBA0096F199 /* RedempationViewController.swift */,
 				B1F2A2B21B61F33B005A93C8 /* PromotionViewController.swift */,
 				B1F0A6B81B4E456B00E13E98 /* Main.storyboard */,
 				B1F3673F1B60E69500362320 /* SuccessView.xib */,
@@ -263,6 +266,7 @@
 				B19B41081B4E881300EA94DE /* RecycleViewController.swift in Sources */,
 				B1F0A6B51B4E456B00E13E98 /* AppDelegate.swift in Sources */,
 				B19B41061B4E87C400EA94DE /* HomeViewController.swift in Sources */,
+				B13222941B6A1FBA0096F199 /* RedempationViewController.swift in Sources */,
 				B1F2A2B31B61F33B005A93C8 /* PromotionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

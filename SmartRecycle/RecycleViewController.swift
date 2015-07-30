@@ -65,7 +65,7 @@ class RecycleViewController: UIViewController {
     }
     
     func qrscannerHandling() {
-        let alertController = UIAlertController(title: "You are at NEA Bin 2337", message: "Place your recyclables into the bin", preferredStyle: UIAlertControllerStyle.Alert)
+        let alertController = UIAlertController(title: "You are at NEA Recycle Bin 2337", message: "Place your recyclables into the bin", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
             self.processInputWeight()
         }))

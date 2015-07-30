@@ -37,9 +37,14 @@ class HomeViewController: UIViewController {
         self.view.addSubview(mapView)
         
         var marker = GMSMarker()
-        marker.position = CLLocationCoordinate2DMake(1.30766475517679, 103.759361614322)
-        marker.title = "NEA Recycle Bin 2332"
+        marker.position = CLLocationCoordinate2DMake(1.298830, 103.859344)
+        marker.title = "NEA Recycle Bin 2337"
         marker.map = mapView
+        
+        var marker1 = GMSMarker()
+        marker1.position = CLLocationCoordinate2DMake(1.30766475517679, 103.759361614322)
+        marker1.title = "NEA Recycle Bin 2332"
+        marker1.map = mapView
         
         var marker2 = GMSMarker()
         marker2.position = CLLocationCoordinate2DMake(1.29882122485547, 103.797090875524)
